@@ -1,0 +1,105 @@
+<!-- Create Registration form using HTML, CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration From</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+        .form-container {
+            width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px #aaa;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn {
+            margin-top: 15px;
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+        }
+        .reset-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form>
+            <label>Login ID</label>
+            <input type="text" name="login" required>
+
+            <label>Password</label>
+            <input type="password" name="password" required>
+
+            <label>Confirm Password</label>
+            <input type="password" name="confirm_password" required>
+
+            <label>First Name</label>
+            <input type="text" name="fname">
+
+            <label>Last Name</label>
+            <input type="text" name="lname">
+
+            <label>Email</label>
+            <input type="email" name="email">
+
+            <label>Mobile Number</label>
+            <input type="text" name="mobile">
+
+            <label>Country</label>
+            <select name="country">
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+                <option>Australia</option>
+            </select>
+
+            <div style="display:flex; justify-content:space-between;">
+                <input type="submit" value="Submit" class="btn submit-btn">
+                <input type="reset" value="Reset" class="btn reset-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+    
+    

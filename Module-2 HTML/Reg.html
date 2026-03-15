@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Individual Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hwb(187 26% 8%);
+        }
+        .form-container {
+            width: 600px;
+            margin: 30px auto;
+            background: #91dff4;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px #aaa;
+        }
+        h2 {
+            text-align: center;
+            color: #ef196e;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #c11a6d;
+            margin-top: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        label {
+            color: #140dd5;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ebebef;
+            border-radius: 4px;
+            resize: none;
+        }
+        .btn {
+            margin-top: 15px;
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: #1893ea;
+            color: white;
+        }
+        .reset-btn {
+            background-color: #1893ea;
+            color: white;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .declaration {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #0713f8;
+            line-height: 1.5;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Individual Registration</h2>
+        <form>
+            <h3>User Particulars</h3>
+            <label>Login ID *</label>
+            <input type="text" required>
+
+            <label>Password *</label>
+            <input type="password" required>
+
+            <label>Confirm Password *</label>
+            <input type="password" required>
+
+            <h3>Personal Particulars</h3>
+            <label>Salutation *</label>
+            <select required>
+                <option>Select</option>
+                <option>Mr</option>
+                <option>Ms</option>
+                <option>Mrs</option>
+            </select>
+
+            <label>First Name *</label>
+            <input type="text" required>
+
+            <label>Middle Name</label>
+            <input type="text">
+
+            <label>Last Name *</label>
+            <input type="text" required>
+
+            <label>Resident Status *</label>
+            <select required>
+                <option>Select</option>
+                <option>Resident</option>
+                <option>Non-Resident</option>
+            </select>
+
+            <label>Country *</label>
+            <select required>
+                <option>Select</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+            </select>
+
+            <label>Email ID *</label>
+            <input type="email" required>
+
+            <label>Mobile Number *</label>
+            <input type="text" required>
+
+            <h3>Account Particulars</h3>
+            <label>15 Digit Account No *</label>
+            <input type="text" required>
+
+            <label>Nick Name *</label>
+            <input type="text" required>
+
+            <label>Fund Transfer *</label>
+            <select required>
+                <option>Select</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+
+            <div class="declaration">
+               <h3> <strong>DECLARATION</strong></h3><br>
+                I have read, understood and hereby agree to the Terms and Conditions in respect of all products and channels.<br><br>
+                I understand that any changes in the terms and conditions applicable to this relationship would be made available to me on request at any IOB branches. I confirm that all accounts under this login name are operated singly and in case of joint account operated by either or survivor/anyone or survivor(s) under his/her joint name respectively. I do hereby declare that information furnished in this form is true to the best of my knowledge and belief.
+            </div>
+
+            <div style="display:flex; justify-content:space-between;">
+                <input type="submit" value="Submit" class="btn submit-btn">
+                <input type="reset" value="Reset" class="btn reset-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* Default link style */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Visited link */
+a:visited {
+    color: purple;
+}
+
+/* Hover effect */
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Active link (when clicked) */
+a:active {
+    color: green;
+}

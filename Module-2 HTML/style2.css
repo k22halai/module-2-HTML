@@ -1,0 +1,38 @@
+/* Button styling */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Dynamic pseudo-classes for button */
+.btn:hover {
+    background-color: #0056b3;   /* Changes color when hovered */
+}
+.btn:active {
+    background-color: #003d80;   /* Changes color when clicked */
+}
+
+/* Input field focus effect */
+input:focus {
+    border: 2px solid #28a745;
+    outline: none;
+    background-color: #e8f5e9;
+}
+
+/* Link pseudo-classes */
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+a:active {
+    color: green;
+}
